@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通勤に関するアンケート</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1 id="title">通勤に関するアンケート</h1>
+    <p id="description">通勤方法について教えてください</p>
+    <form id="survey-form">
+        <label id="name-label">名前</label>
+        <input id="name" type="text" required placeholder="通勤　太郎">
+        <label id="email-label">メールアドレス</label>
+        <input id="email" type="email" required placeholder="email@example.com">
+        <label id="number-label">年齢</label>
+        <input id="number" type="number" min="10" max="99" required placeholder="25" class="bottom-spacing">
+
+        <label for="dropdown" class="bottom-spacing">職業</label><br>
+        <select id="dropdown">
+            <option alia-placeholder>未選択</option>
+            <option>高校生</option>
+            <option>大学生</option>
+            <option>社会人</option>
+            <option>その他</option>
+        </select>
+
+        <fieldset class="bottom-spacing">
+            <legend for="">通勤時間を教えてください</legend>
+            <input id="30" type="radio" name="time" value="30">
+            <label for="30">30分以内</label><br>
+
+            <input id="60" type="radio" name="time" value="60">
+            <label for="60">60分以内</label><br>
+
+            <input id="90" type="radio" name="time" value="90">
+            <label for="90">90分以内</label><br>
+
+            <input id="120" type="radio" name="time" value="120">
+            <label for="120">2時間以上</label>
+        </fieldset>
+
+        <fieldset class="bottom-spacing">
+            <legend>通勤手段を教えてください</legend>
+            <input id="train" type="checkbox" value="train">
+            <label for="train">電車</label>
+
+            <input id="bus" type="checkbox" value="bus">
+            <label for="bus">バス</label>
+
+            <input id="bicycle" type="checkbox" value="bicycle">
+            <label for="bicycle">自転車</label>
+
+            <input id="walk" type="checkbox" value="walk">
+            <label for="walk">徒歩</label>
+
+            <input id="car" type="checkbox" value="car">
+            <label for="car">車</label>
+        </fieldset>
+        <label for="feedback">通勤に関する不満を教えてください</label>
+        <textarea id="feedback" cols="50" rows="5"></textarea>
+
+        <input id="submit" type="submit" value="送信する">
+    </form>
+    </div>
+</body>
+
+</html>
